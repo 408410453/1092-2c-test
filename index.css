@@ -1,0 +1,16 @@
+body{
+    font-family: 'Itim',cursive;
+}
+.h3 {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+li {
+    list-style: none;
+    margin:0px 10px;
+}
+

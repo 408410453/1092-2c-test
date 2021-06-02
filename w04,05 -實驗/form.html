@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+
+<body>
+    <form action="http://httpbin.org/get" target="_blank" autocomplete="on" id="p1">
+        <fieldset>
+            <legend>個人資料</legend>
+                <label for="fname">Your name:</label>
+                    <input type="text" name="fname" maxlength="15"><br>
+                <!--單選(radio)-->
+                <label for="gender">性別:</label><br>
+                <input type="radio" id="man" name="gender" value="man">
+                    <label for="man">man</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">female</label><br><br>
+                <!--複選(checkbox)-->
+                <label for="Profession">職業:</label><br>
+                <input type="checkbox" id="student" name="Profession" value="student">
+                    <label for="student">student</label>
+                <input type="checkbox" id="engineer" name="Profession" value="engineer">
+                    <label for="engineer">engineer</label>
+                <input type="checkbox" id="teacher" name="Profession" value="teacher">
+                    <label for="teacher">teacher</label><br><br>
+                <!--email-->
+                <label for="email">Email:</label>
+                    <input type="email" name="email" id="email"><br><br>
+
+                <label for="web"><a href="http://127.0.0.1:5500/test.html">個人網站:</a></label>
+                    <input type="url" id="web" name="web" ><br><br>
+                <!--電話(tel)-->
+                <label for="phone">行動電話:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="0912345678" pattern="[0]{1}[9]{1}[0-9]{8}"><br><br>
+                 <!--textarea-->
+                <label for="textarea">對於本站的意見:</label><br>
+                    <textarea name="textarea" id="textarea" cols="100" rows="10" placeholder="i think..."></textarea><br><br>
+                <!--日期(date)-->
+                <label for="birthday">日期:</label>
+                    <input type="date" name="birthday" id="birthday" min="2000-01-01" max="2022-12-31"><br><br>
+                
+                <hr><br>
+
+                <!--顏色(color)-->
+                <label for="color">喜歡的顏色:</label>
+                    <input type="color" id="color" name="color" value="#00ffff"><br><br>
+                <!--range-->
+                <label for="range">對於本站的喜歡程度:</label>
+                    不喜歡<input type="range" name="range" id="range" min="1" max="10">喜歡 <br><br>
+                <!--select-->
+                <label for="travel">請問你想參加的行程:</label>
+                    <select name="travel" id="travel">
+                        <optgroup label="國內">
+                            <option value="travel1">台南</option>
+                            <option value="travel2">台中</option>
+                            <option value="travel3">高雄</option>
+                            <option value="travel4">花蓮</option>
+                        </optgroup>
+                        <optgroup label="國外">
+                            <option value="travel4">日本</option>
+                            <option value="travel5">中國</option>
+                            <option value="travel6">韓國</option>
+                        </optgroup>
+                    </select><br><br>
+
+                <hr><br>
+
+                <label for="fruit">請問你喜歡的水果:</label><br>
+                    <select name="fruit" id="fruit" size="4" multiple>                   
+                        <option value="fruit1">apple</option>
+                        <option value="fruit2">banana</option>
+                        <option value="fruit3">grape</option>
+                        <option value="fruit4">watermelon</option>
+                    </select><br><br>
+  
+        </fieldset>
+        
+        <hr>
+
+        <!--submit-->
+        <input type="submit" value="submit">
+        <!--reset-->
+        <input type="reset" value="reset">
+        
+ 
+    </form>
+</body>
+</html>

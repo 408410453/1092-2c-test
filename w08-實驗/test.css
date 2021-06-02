@@ -1,0 +1,37 @@
+table,th,td {
+    border: 1px solid blue;
+    border-style: dotted;
+    border-collapse: collapse;
+    margin: 15px;
+    padding: 8px;
+}
+table {
+    width: 80%;
+}
+.th_width {
+    width: 20%;
+    color: chocolate;
+}
+.td_width {
+    width:25%;
+    color: chocolate;
+    
+}
+.table1 {
+    border-style: dotted;
+    background-color:bisque;
+}
+
+.table2 {
+    background-color:lightblue;
+}
+
+.table3 {
+    background-color: lightgray;
+}
+.table4 {
+    background-color: lightpink;
+}
+.table5 {
+    background-color: lightgreen;
+}

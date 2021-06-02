@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>408410453</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        while(true){
+            var x = prompt("輸入一個整數(50內)：");
+            if(x>50){
+                alert("輸入的值過大，請重新輸入");
+                continue;
+            }
+            else if(isNaN(x)){
+                alert("輸入的值不是數字");
+                continue;
+            }
+            break;
+        }
+        printTree(x);
+        function printTree(x){
+            for(var i=1;i<=x;i++){
+                print(i);
+                if(i!=x){
+                    document.write("<br/>");
+                }
+            }
+            document.write("<br/>");
+            for(var i=0;i<x;i++){
+                document.write("*&nbsp;<br/>");
+            }
+            function print(x){
+                for(var i=0;i<x;i++){
+                    document.write("*&nbsp;");
+                }for(var i=1;i<x;i++){
+                    document.write("*&nbsp;");
+                }
+            }
+        }
+        document.body.style.textAlign="center";
+        </script>
+    </body>
+</html>

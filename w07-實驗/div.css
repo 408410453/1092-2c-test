@@ -1,0 +1,38 @@
+header {
+    background-color: pink;
+    line-height:100px;
+    text-align: center;
+    color:blue;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.div1 {
+    background-color: plum;
+    float: left;
+    line-height:400px;
+    width: 120px;
+    text-align: center;
+    color:cyan;
+    font-size: 1rem;
+    font-family:Courier;
+}
+.div2 {
+    background-color:powderblue;
+    line-height:400px;
+    text-align: center;
+    color:lightcoral;
+    font-size: 30px;
+}
+.div3 {
+    background-color: rosybrown;
+    float: right;
+    line-height:400px;
+    width: 120px;
+    text-align: center;
+}
+footer {
+    background: linear-gradient(to top,gray,chocolate);
+    line-height:100px;
+    text-align: center;
+}
